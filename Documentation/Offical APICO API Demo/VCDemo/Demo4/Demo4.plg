@@ -1,0 +1,22 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Demo4 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/Demo4.res" /d "NDEBUG" "F:\Vc\Lxl200502\Debug\Setup\Demo\VCDemo\Demo4\Demo4.rc"" 
+Creating command line "link.exe MPC08D.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/VCDemo4.pdb" /machine:I386 /out:"Release/VCDemo4.exe"  .\Release\Demo4.obj .\Release\Demo4Dlg.obj .\Release\StdAfx.obj .\Release\Demo4.res "
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+VCDemo4.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

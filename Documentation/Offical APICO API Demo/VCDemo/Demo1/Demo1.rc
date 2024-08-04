@@ -1,0 +1,350 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Demo1.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Demo1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 VCDemo1"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "VCDemo1 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2005",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "",IDC_CARDINFO,40,40,156,50
+END
+
+IDD_DEMO1_DIALOG DIALOGEX 252, 0, 203, 335
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MPC08 运动控制演示示例"
+MENU IDR_MENU1
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,146,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,146,23,50,14
+    PUSHBUTTON      "图形显示",IDC_BTN_SHOW,145,51,51,13
+    GROUPBOX        "直线运动参数设置",IDC_FRAME_LINE,14,32,115,151
+    LTEXT           "X轴轴号：",IDC_STATIC_XAXES,22,45,41,8,NOT WS_GROUP
+    LTEXT           "初速度：",IDC_STATIC_XLOWSPEED,22,57,41,8,NOT WS_GROUP
+    LTEXT           "最高速度：",IDC_STATIC_XHIGHSPEED,22,69,41,8,NOT 
+                    WS_GROUP
+    LTEXT           "加速度：",IDC_STATIC_XACCEL,22,81,41,8,NOT WS_GROUP
+    LTEXT           "移动距离：",IDC_STATIC_XSTEP,22,93,41,8,NOT WS_GROUP
+    LTEXT           "Y轴轴号：",IDC_STATIC_YAXES,24,117,41,8,NOT WS_GROUP
+    LTEXT           "初速度：",IDC_STATIC_YLOWSPEED,24,129,41,8,NOT WS_GROUP
+    LTEXT           "最高速度：",IDC_STATIC_YHIGHSPEED,24,141,41,8,NOT 
+                    WS_GROUP
+    LTEXT           "加速度：",IDC_STATIC_YACCEL,24,153,41,8,NOT WS_GROUP
+    LTEXT           "移动距离：",IDC_STATIC_YSTEP,24,165,41,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_XAXES,68,43,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XLOWSPEED,68,55,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XHIGHSPEED,68,67,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XACCEL,68,79,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XSTEP,68,91,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YAXES,68,117,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YLOWSPEED,68,129,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YHIGHSPEED,68,141,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YACCEL,68,153,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YSTEP,68,165,52,12,ES_AUTOHSCROLL
+    CONTROL         "Tab4",IDC_TAB_SET,"SysTabControl32",TCS_MULTILINE,7,7,
+                    130,293
+    CONTROL         "常速",IDC_RADIO_CON,"Button",BS_AUTORADIOBUTTON,22,202,
+                    34,10
+    CONTROL         "快速",IDC_RADIO_FAST,"Button",BS_AUTORADIOBUTTON,73,202,
+                    34,10
+    GROUPBOX        "速度类型",IDC_GROUP_SPEEDTYPE,13,192,118,22
+    CONTROL         "点位运动",IDC_RADIO_PMOVE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,21,223,47,10
+    CONTROL         "连续运动",IDC_RADIO_VMOVE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,71,223,44,10
+    GROUPBOX        "运动类型",IDC_GROUP_MOVETYPE,14,215,117,21
+    CONTROL         "X轴",IDC_RADIO_XAXES,"Button",BS_AUTORADIOBUTTON,21,246,
+                    47,10
+    CONTROL         "Y轴",IDC_RADIO_YAXES,"Button",BS_AUTORADIOBUTTON,71,246,
+                    44,10
+    GROUPBOX        "单轴选择",IDC_GROUP_XYAXES,14,237,117,22
+    CONTROL         "单轴",IDC_RADIO_AXES1,"Button",BS_AUTORADIOBUTTON,21,
+                    268,47,10
+    CONTROL         "两轴",IDC_RADIO_AXES2,"Button",BS_AUTORADIOBUTTON,71,
+                    268,44,10
+    GROUPBOX        "单轴选择",IDC_GROUP_AXESNUM,14,260,117,34
+    PUSHBUTTON      "启动运动",IDC_BTN_STARTMOVE,145,67,51,13
+    PUSHBUTTON      "急停",IDC_BTN_SUDDENSTOP,145,83,51,13
+    PUSHBUTTON      "缓停",IDC_BTN_DESCENDSTOP,145,99,51,13
+    LTEXT           "Ready",IDC_STATIC_MSG,7,319,189,9
+    PUSHBUTTON      "清零",IDC_BTN_RESET,145,116,51,13
+    LTEXT           "Y轴轴号：",IDC_STATIC_ARC_YAXES,23,61,41,8
+    LTEXT           "初速度：",IDC_STATIC_ARC_VLOWSPEED,23,73,41,8
+    LTEXT           "最高速度：",IDC_STATIC_ARC_VHIGHSPEED,23,85,41,8
+    LTEXT           "加速度：",IDC_STATIC_ARC_VACCEL,23,97,41,8
+    LTEXT           "圆心X坐标：",IDC_STATIC_ARC_XCEN,23,109,45,8
+    EDITTEXT        IDC_EDIT_ARC_YAXES,69,59,52,12,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_EDIT_ARC_VLOWSPEED,69,71,52,12,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIT_ARC_VHIGHSPEED,69,83,52,12,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIT_ARC_VACCEL,69,95,52,12,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIT_ARC_XCEN,69,107,52,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "X轴轴号：",IDC_STATIC_ARC_XAXES,23,48,41,8
+    EDITTEXT        IDC_EDIT_ARC_XAXES,69,46,52,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "圆心Y坐标：",IDC_STATIC_ARC_YCEN,23,122,45,8
+    EDITTEXT        IDC_EDIT_ARC_YCEN,69,120,52,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "圆弧角度：",IDC_STATIC_ARC_R,23,135,41,8
+    EDITTEXT        IDC_EDIT_ARC_R,69,133,52,12,ES_AUTOHSCROLL | WS_GROUP
+    GROUPBOX        "速度类型",IDC_GROUP_ARC_SPEEDTYPE,14,191,117,22
+    CONTROL         "常速",IDC_RADIO_ARC_CON,"Button",BS_AUTORADIOBUTTON,21,
+                    201,34,10
+    CONTROL         "快速",IDC_RADIO_ARC_FAST,"Button",BS_AUTORADIOBUTTON,71,
+                    201,34,10
+    LTEXT           "X轴轴号：",IDC_STATIC_LXAXES,23,47,41,8
+    LTEXT           "初速度：",IDC_STATIC_LLOWSPEED,23,101,40,8
+    LTEXT           "最高速度：",IDC_STATIC_LHIGHSPEED,23,113,40,8
+    LTEXT           "加速度：",IDC_STATIC_LACCEL,23,125,41,8
+    LTEXT           "Y移动距离：",IDC_STATIC_LYSTEP,23,83,45,8
+    LTEXT           "Y轴轴号：",IDC_STATIC_LYAXES,23,71,41,8
+    LTEXT           "X移动距离：",IDC_STATIC_LXSTEP,23,59,45,8
+    EDITTEXT        IDC_EDIT_LXAXES,69,45,52,12,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_EDIT_LLOWSPEED,69,99,52,12,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_EDIT_LHIGHSPEED,69,111,52,12,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIT_LACCEL,69,123,52,12,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_EDIT_LYSTEP,69,81,52,12,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_EDIT_LYAXES,69,69,52,12,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_EDIT_LXSTEP,69,57,52,12,ES_AUTOHSCROLL | WS_GROUP
+    GROUPBOX        "速度类型",IDC_GROUP_LINE_SPEEDTYPE,13,191,118,22
+    CONTROL         "常速",IDC_RADIO_LINE_CON,"Button",BS_AUTORADIOBUTTON,21,
+                    201,34,10
+    CONTROL         "快速",IDC_RADIO_LINE_FAST,"Button",BS_AUTORADIOBUTTON,
+                    71,201,34,10
+END
+
+IDD_G DIALOG DISCARDABLE  0, 0, 248, 253
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图形显示"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "清除",IDC_BTN_CLEAR,212,234,29,12
+    CONTROL         "X:    Y:",IDC_STATIC_MSGPOS,"Static",SS_LEFTNOWORDWRAP,
+                    7,238,124,8
+    LTEXT           "比例因子：",IDC_STATIC,133,237,42,9
+    EDITTEXT        IDC_EDIT_FACTOR,175,235,32,12,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Demo1 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "VCDemo1\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "VCDemo1.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "VCDemo1 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_DEMO1_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 328
+    END
+
+    IDD_G, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 241
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 246
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "退出",                        IDC_EXIT
+    END
+    POPUP "关于(&A)"
+    BEGIN
+        MENUITEM "板卡信息",                    IDC_CARDINFO
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "res\\default1.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 VCDemo1(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Demo1.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
